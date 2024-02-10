@@ -1,13 +1,14 @@
 #import,dir "..";
 
 main :: () {
-    test(cast(u8)    5);
-    test(cast(s8)   -5);
-    test(cast(u16) 999);
-    test(cast(s16) -99);
+    test(u8, 5);
+    test(s8, -5);
+    test(u16, 999);
+    test(s16, -99);
 }
 
-test :: (value: $T) {
+test :: ($T: Type, data: T) {
+    value : T = cast(T) data;
     res1 := bitwriter_primitive(value);
     res2 := bitreader_primitive(res1, T);
     print("Type: %, Value: %, Res1: %, Res2: %\n",
