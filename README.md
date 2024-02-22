@@ -8,10 +8,12 @@ A simple Jai library for reading/writing your values from/to binary data.
 ## TODO
 - [x] **Writing primitives**  
     Make some function that can write the primary types:
-    u8, s8, u16, s16, u32, s32, u64, s64, float32, float64.
+    u8, s8, u16, s16, u32, s32, u64, s64, float32, float64,
+    bool, string, and their array versions.
 - [x] **Reading primitives**  
     Make some function that can read the primary types:
-    u8, s8, u16, s16, u32, s32, u64, s64, float32, float64.
+    u8, s8, u16, s16, u32, s32, u64, s64, float32, float64,
+    bool, string, and their array versions.
 - [x] **Writing arbitrary structs**  
     Make some function that can take in any struct and
     recursively writes all the data inside it to a buffer.
