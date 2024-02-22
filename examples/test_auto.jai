@@ -27,6 +27,9 @@ main :: () {
     print("[]Bar%\n", bitwriter(Bar.[.{0}, .{1}, .{2}]));
 
     print("string %\n", bitwriter("Hello, Sailor!"));
+
+    print("bool %\n", bitwriter(true));
+    print("bool %\n", bitwriter(false));
 }
 
 #import "Basic";
